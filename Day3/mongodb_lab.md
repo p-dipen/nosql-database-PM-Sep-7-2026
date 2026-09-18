@@ -39,6 +39,7 @@ Find all products where the `category` is `"Electronics"`.
 
 ```javascript
 // Write your query here:
+db.products.find({category:"Electronics"})
 
 ```
 
@@ -49,6 +50,7 @@ Find all products with a `price` greater than or equal to `$100` and less than o
 
 ```javascript
 // Write your query here:
+db.products.find({price:{$gte:100, $lte:300}})
 
 ```
 
@@ -59,6 +61,7 @@ Find all products whose `category` is either `"Audio"` or `"Furniture"`.
 
 ```javascript
 // Write your query here:
+db.products.find({category:{$in:["Audio", "Furniture"]}})
 
 ```
 
@@ -69,7 +72,7 @@ Find all products that have a `rating` greater than or equal to `4.7` AND a `sto
 
 ```javascript
 // Write your query here:
-
+db.products.find({rating:{$gte:4.7}, stock: {$gte:20}})
 ```
 
 ---
@@ -81,6 +84,7 @@ Find all products in the `"Electronics"` category, but display **only** the `nam
 
 ```javascript
 // Write your query here:
+db.products.find({category:"Electronics"}, {name: 1, price: 1,sku:1, _id: 0})
 
 ```
 
@@ -91,6 +95,7 @@ List all products sorted by `price` from highest to lowest (descending order).
 
 ```javascript
 // Write your query here:
+db.products.find().sort({price: -1})
 
 ```
 
@@ -101,7 +106,7 @@ Retrieve the top 3 most expensive products after skipping the first single most 
 
 ```javascript
 // Write your query here:
-
+db.products.find({}, {name:1,price:1}).sort({price: -1}).limit(3).skip(1)
 ```
 
 ---
@@ -113,7 +118,7 @@ Query products where the nested field `specifications.batteryLifeHours` is great
 
 ```javascript
 // Write your query here:
-
+db.products.find({"specifications.batteryLifeHours":{$gte:30}})
 ```
 
 ---
