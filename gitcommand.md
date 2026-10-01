@@ -7,3 +7,4 @@ Stage = Tell Git which changes you want to save next
 Commit = Save a snapshot of your staged changes
 
 Push = Send your changes to a remote repository
+Testing Git push from Ubuntu
