@@ -216,3 +216,6 @@ Each container stores JSON documents related to that entity.
 - Data is stored as JSON documents
 - Documents can have different structures
 - Containers are used because Cosmos DB is schema-flexible and highly scalable
+
+## My Update
+![Screenshot](screenshot.png)
