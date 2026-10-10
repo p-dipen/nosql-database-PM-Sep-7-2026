@@ -23,6 +23,7 @@ An **SDK (Software Development Kit)** is simply a library of pre-written helper 
 Here is the best secret in NoSQL: **If you understand JSON, you already understand Python data structures!**
 
 ### In JSON:
+
 ```json
 {
   "name": "Sarah Connor",
@@ -33,6 +34,7 @@ Here is the best secret in NoSQL: **If you understand JSON, you already understa
 ```
 
 ### In Python:
+
 ```python
 student = {
     "name": "Sarah Connor",
@@ -41,6 +43,7 @@ student = {
     "courses": ["NoSQL", "AI"]
 }
 ```
+
 * A JSON Object `{}` is called a **Dictionary** (`dict`) in Python.
 * A JSON Array `[]` is called a **List** (`list`) in Python.
 * Strings use quotes `"text"`, numbers are just numbers `28`, and booleans are `True` or `False`.
@@ -52,19 +55,25 @@ That's it! When you insert a document into NoSQL using Python, you are literally
 ## 3. How to Run Python
 
 ### Check if Python is installed:
+
 Open your Terminal (Mac) or Command Prompt (Windows) and type:
+
 ```bash
 python3 --version
 ```
+
 *(On Windows, you can also type `python --version`)*
 
 ### How to run any Python file:
+
 ```bash
 python3 my_script.py
 ```
 
 ### How to install SDK libraries (`pip`):
+
 Python uses a package manager called `pip` to install libraries. Run this one command:
+
 ```bash
 pip install pymongo azure-cosmos
 ```
@@ -172,12 +181,12 @@ except Exception as error:
 
 ## 8. Summary of Commands Every Beginner Needs
 
-| What You Want to Do | Python Code |
-| :--- | :--- |
-| **Print something to the screen** | `print("Hello World")` |
-| **Store a document in a variable** | `doc = {"id": "1", "name": "Dipen"}` |
-| **Get a field from a document** | `doc["name"]` (returns `"Dipen"`) |
-| **Loop through a list of documents** | `for doc in documents:` <br> &nbsp;&nbsp;&nbsp;&nbsp;`print(doc["name"])` |
-| **Insert into MongoDB** | `collection.insert_one(doc)` |
-| **Insert into Cosmos DB** | `container.upsert_item(doc)` |
-| **Read by ID in Cosmos DB** | `container.read_item(item=id, partition_key=pk)` |
+| What You Want to Do                        | Python Code                                                               |
+| :----------------------------------------- | :------------------------------------------------------------------------ |
+| **Print something to the screen**    | `print("Hello World")`                                                  |
+| **Store a document in a variable**   | `doc = {"id": "1", "name": "Dipen"}`                                    |
+| **Get a field from a document**      | `doc["name"]` (returns `"Dipen"`)                                     |
+| **Loop through a list of documents** | `for doc in documents:`  &nbsp;&nbsp;&nbsp;&nbsp;`print(doc["name"])` |
+| **Insert into MongoDB**              | `collection.insert_one(doc)`                                            |
+| **Insert into Cosmos DB**            | `container.upsert_item(doc)`                                            |
+| **Read by ID in Cosmos DB**          | `container.read_item(item=id, partition_key=pk)`                        |
