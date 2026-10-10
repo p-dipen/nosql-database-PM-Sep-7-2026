@@ -1,0 +1,261 @@
+[
+  {
+    "id": "CUST-001",
+    "type": "customer",
+    "customerId": "CUST-001",
+    "name": "Sarah Connor",
+    "email": "sarah.connor@example.com",
+    "membershipLevel": "Platinum",
+    "address": {
+      "street": "742 Evergreen Terrace",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M4B 1B3",
+      "country": "Canada"
+    },
+    "preferences": {
+      "newsletter": true,
+      "preferredCategories": ["Electronics", "AI Gadgets", "Wearables"]
+    },
+    "createdAt": "2024-01-15T09:30:00Z"
+  },
+  {
+    "id": "CUST-002",
+    "type": "customer",
+    "customerId": "CUST-002",
+    "name": "Marcus Wright",
+    "email": "marcus.wright@example.com",
+    "membershipLevel": "Gold",
+    "address": {
+      "street": "100 Queen Street West",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M5H 2N2",
+      "country": "Canada"
+    },
+    "preferences": {
+      "newsletter": false,
+      "preferredCategories": ["Audio", "Accessories"]
+    },
+    "createdAt": "2024-02-10T14:15:00Z"
+  },
+  {
+    "id": "CUST-003",
+    "type": "customer",
+    "customerId": "CUST-003",
+    "name": "Elena Rostova",
+    "email": "elena.rostova@example.com",
+    "membershipLevel": "Silver",
+    "address": {
+      "street": "1250 Rene-Levesque Blvd",
+      "city": "Montreal",
+      "province": "QC",
+      "postalCode": "H3B 4W8",
+      "country": "Canada"
+    },
+    "preferences": {
+      "newsletter": true,
+      "preferredCategories": ["Smart Home", "Electronics"]
+    },
+    "createdAt": "2024-03-01T11:00:00Z"
+  },
+  {
+    "id": "PROD-101",
+    "type": "product",
+    "productId": "PROD-101",
+    "name": "NeuralNoise Cancelling Headphones",
+    "category": "Audio",
+    "price": 299.99,
+    "inventory": 45,
+    "rating": 4.8,
+    "tags": ["audio", "bluetooth", "noise-cancelling", "wireless"],
+    "specs": {
+      "batteryLifeHours": 36,
+      "weightGrams": 250,
+      "connectivity": "Bluetooth 5.3"
+    },
+    "reviews": [
+      { "reviewer": "Alex P.", "rating": 5, "comment": "Best noise cancellation I've ever experienced." },
+      { "reviewer": "Devon K.", "rating": 4, "comment": "Great sound, slightly tight on the ears." }
+    ],
+    "embedding": [0.82, -0.15, 0.44]
+  },
+  {
+    "id": "PROD-102",
+    "type": "product",
+    "productId": "PROD-102",
+    "name": "VisionPro AI Smart Webcam 4K",
+    "category": "Electronics",
+    "price": 189.50,
+    "inventory": 20,
+    "rating": 4.6,
+    "tags": ["video", "4k", "ai-tracking", "usb-c"],
+    "specs": {
+      "resolution": "4K Ultra HD",
+      "frameRate": "60fps",
+      "aiFeatures": ["auto-framing", "background blur"]
+    },
+    "reviews": [
+      { "reviewer": "Samantha T.", "rating": 5, "comment": "Auto-framing works like magic during presentations." }
+    ],
+    "embedding": [0.65, 0.48, 0.31]
+  },
+  {
+    "id": "PROD-103",
+    "type": "product",
+    "productId": "PROD-103",
+    "name": "BioPulse Smartwatch Elite",
+    "category": "Wearables",
+    "price": 349.00,
+    "inventory": 12,
+    "rating": 4.2,
+    "tags": ["fitness", "health", "smartwatch", "gps"],
+    "specs": {
+      "batteryLifeHours": 72,
+      "waterResistance": "50m",
+      "sensors": ["ECG", "SpO2", "Temperature"]
+    },
+    "reviews": [
+      { "reviewer": "Jordan M.", "rating": 4, "comment": "Battery lasts 3 days easily. Very accurate HR." },
+      { "reviewer": "Li Wei", "rating": 4.5, "comment": "Sleek look and excellent health dashboards." }
+    ],
+    "embedding": [0.38, 0.72, -0.21]
+  },
+  {
+    "id": "PROD-104",
+    "type": "product",
+    "productId": "PROD-104",
+    "name": "AuraGlow Smart Ambient Light Strip",
+    "category": "Smart Home",
+    "price": 69.99,
+    "inventory": 85,
+    "rating": 4.5,
+    "tags": ["lighting", "smart-home", "rgb", "matter"],
+    "specs": {
+      "lengthMeters": 5,
+      "ecosystem": ["Matter", "HomeKit", "Alexa", "Google Home"]
+    },
+    "reviews": [
+      { "reviewer": "Chris R.", "rating": 5, "comment": "Vibrant colors and synced perfectly with my TV." }
+    ],
+    "embedding": [-0.12, 0.85, 0.33]
+  },
+  {
+    "id": "ORD-2024-001",
+    "type": "order",
+    "orderId": "ORD-2024-001",
+    "customerId": "CUST-001",
+    "orderDate": "2024-03-10T16:20:00Z",
+    "status": "Delivered",
+    "shippingAddress": {
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M4B 1B3"
+    },
+    "items": [
+      {
+        "productId": "PROD-101",
+        "productName": "NeuralNoise Cancelling Headphones",
+        "quantity": 1,
+        "unitPrice": 299.99,
+        "lineTotal": 299.99
+      },
+      {
+        "productId": "PROD-104",
+        "productName": "AuraGlow Smart Ambient Light Strip",
+        "quantity": 2,
+        "unitPrice": 69.99,
+        "lineTotal": 139.98
+      }
+    ],
+    "subtotal": 439.97,
+    "tax": 57.20,
+    "totalAmount": 497.17,
+    "paymentMethod": "CreditCard"
+  },
+  {
+    "id": "ORD-2024-002",
+    "type": "order",
+    "orderId": "ORD-2024-002",
+    "customerId": "CUST-002",
+    "orderDate": "2024-03-12T10:05:00Z",
+    "status": "Shipped",
+    "shippingAddress": {
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M5H 2N2"
+    },
+    "items": [
+      {
+        "productId": "PROD-101",
+        "productName": "NeuralNoise Cancelling Headphones",
+        "quantity": 1,
+        "unitPrice": 299.99,
+        "lineTotal": 299.99
+      }
+    ],
+    "subtotal": 299.99,
+    "tax": 39.00,
+    "totalAmount": 338.99,
+    "paymentMethod": "PayPal"
+  },
+  {
+    "id": "ORD-2024-003",
+    "type": "order",
+    "orderId": "ORD-2024-003",
+    "customerId": "CUST-003",
+    "orderDate": "2024-03-15T18:45:00Z",
+    "status": "Processing",
+    "shippingAddress": {
+      "city": "Montreal",
+      "province": "QC",
+      "postalCode": "H3B 4W8"
+    },
+    "items": [
+      {
+        "productId": "PROD-102",
+        "productName": "VisionPro AI Smart Webcam 4K",
+        "quantity": 1,
+        "unitPrice": 189.50,
+        "lineTotal": 189.50
+      },
+      {
+        "productId": "PROD-103",
+        "productName": "BioPulse Smartwatch Elite",
+        "quantity": 1,
+        "unitPrice": 349.00,
+        "lineTotal": 349.00
+      }
+    ],
+    "subtotal": 538.50,
+    "tax": 80.64,
+    "totalAmount": 619.14,
+    "paymentMethod": "CreditCard"
+  },
+  {
+    "id": "ORD-2024-004",
+    "type": "order",
+    "orderId": "ORD-2024-004",
+    "customerId": "CUST-001",
+    "orderDate": "2024-03-20T09:12:00Z",
+    "status": "Delivered",
+    "shippingAddress": {
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M4B 1B3"
+    },
+    "items": [
+      {
+        "productId": "PROD-103",
+        "productName": "BioPulse Smartwatch Elite",
+        "quantity": 1,
+        "unitPrice": 349.00,
+        "lineTotal": 349.00
+      }
+    ],
+    "subtotal": 349.00,
+    "tax": 45.37,
+    "totalAmount": 394.37,
+    "paymentMethod": "ApplePay"
+  }
+]
